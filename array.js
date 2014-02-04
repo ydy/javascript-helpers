@@ -13,3 +13,9 @@ function map(func, arr){
   return result;
 }
 
+module.exports = {
+  forEach: forEach,
+  map: map
+}
+
+
