@@ -1,0 +1,15 @@
+{
+  "author": "Alice",
+  "name": "helpers",
+  "description": "JavaScript Helpers",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ydy/helpers",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ydy/helpers.git"
+  },
+  "main": "array.js"
+  "dependencies": {
+    "tap": "~0.4.8"
+  }
+}
