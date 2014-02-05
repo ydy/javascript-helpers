@@ -13,9 +13,19 @@ function map(func, arr){
   return result;
 }
 
+function every(func, arr){
+  for(var i = 0; i < arr.length; i++){
+    if(func(arr[i])===false) return false;
+   }
+  return true;
+}
+
+
+
 module.exports = {
   forEach: forEach,
-  map: map
+  map: map,
+  every: every
 }
 
 
