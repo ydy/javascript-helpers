@@ -21,4 +21,23 @@ test("map", function(t){
   t.end();
 })
 
+test("every", function(t){
+  var count1 = 0;
+  var count2 = 0
+  var result1 = arrayhelpers.every(function(item){
+    count1++
+    if(item%2===1) return true
+    else return false 
+    }, [1, 3, 4, 5])
+  t.equals(count1, 3, "Correct loop times")
+  t.equals(result1, false, "Correct result")
+  var result2 = arrayhelpers.every(function(item){
+    count2++
+    if(item%2===1) return true
+    else return false 
+    }, [1, 3, 5, 7])
+  t.equals(count2, 4, "Correct loop times")
+  t.equals(result2, true, "Correct result")
+  t.end();
+})
 
